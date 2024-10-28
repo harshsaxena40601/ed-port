@@ -4,27 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const cashcowVideoList = document.querySelector(".cashcow-videos-list");
   const reelsVideoList = document.querySelector(".reels-list");
 
-  // Initially hide the cashcow video list
-  cashcowVideoList.style.display = "none"; // Initially hide cashcow videos
-  reelsVideoList.style.display = "grid"; // Show reels videos initially
+  cashcowVideoList.style.display = "none";
+  reelsVideoList.style.display = "grid";
 
   cashcowButton.addEventListener("click", function () {
-    // Change background color of the cashcow button
     cashcowButton.style.backgroundColor = "rgba(244, 238, 238, 0.22)";
-    reelsButton.style.backgroundColor = ""; // Reset reels button color
+    reelsButton.style.backgroundColor = "";
 
-    // Show cashcow video list and hide reels video list
-    cashcowVideoList.style.display = "grid"; // Show cashcow video list
-    reelsVideoList.style.display = "none"; // Hide reels video list
+    cashcowVideoList.style.display = "grid";
+    reelsVideoList.style.display = "none";
   });
 
   reelsButton.addEventListener("click", function () {
     // Change background color of the reels button
     reelsButton.style.backgroundColor = "rgba(244, 238, 238, 0.22)";
-    cashcowButton.style.backgroundColor = ""; // Reset cashcow button color
+    cashcowButton.style.backgroundColor = "";
 
-    // Show reels video list and hide cashcow video list
-    reelsVideoList.style.display = "grid"; // Show reels video list
-    cashcowVideoList.style.display = "none"; // Hide cashcow video list
+    reelsVideoList.style.display = "grid";
+    cashcowVideoList.style.display = "none";
   });
 });
