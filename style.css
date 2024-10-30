@@ -54,7 +54,7 @@ body {
   flex: 1;
   text-align: center;
   position: relative;
-  /* font-size: 24px; */
+
   text-transform: uppercase;
 }
 .portfolio {
@@ -76,41 +76,38 @@ button {
   /* background-color: red; */
   display: grid;
   justify-content: center;
-  gap: 2%;
+
   justify-items: center;
-  grid-template-columns: 49% 49%;
-  margin-top: 5px;
-  display: none;
+  grid-template-columns: 48% 48%;
+
+  margin: 5px;
 }
 
 .cashcow-video {
-  width: 100%;
+  width: 90%;
+  margin: 5px;
 }
 .cashcow-video:hover {
   box-shadow: 3px 3px red, -0em 0 0em red;
 }
 .reels-list {
-  display: grid;
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
   gap: 10px;
-  justify-items: center;
-  grid-template-columns: 49% 49%;
-  /* grid-template-rows: repeat(auto-fill, minmax(150px, auto)); */
-  display: none;
-  border-radius: 8px;
+  /* display: none; */
+
+  flex-wrap: wrap;
 }
 .cashcow-videos-list,
 .reels-list {
   margin-top: 20px;
   transition: visibility 0.3s ease, height 0.3s ease;
-  overflow: hidden;
 }
 .reels-video:hover {
   box-shadow: 3px 3px red, -0em 0 0em red;
-  overflow: hidden;
 }
 .reels-video {
   width: 100%;
   height: auto;
-  display: block;
+  max-width: 360px;
 }
